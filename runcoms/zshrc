@@ -122,4 +122,6 @@ elif which putclip >/dev/null 2>&1 ; then
 fi
 
 # aws cliの補完
-source /usr/local/bin/aws_zsh_completer.sh
+if [ -f /usr/local/bin/aws_zsh_completer.sh ]; then
+  source /usr/local/bin/aws_zsh_completer.sh
+fi
