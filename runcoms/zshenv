@@ -35,3 +35,4 @@ export NVM_DIR="$HOME/.nvm"
 
 # PostgreSQL
 export PGDATA=/usr/local/var/postgres
+
