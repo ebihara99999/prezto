@@ -18,6 +18,7 @@ export PATH=$PHPENV_ROOT/bin:$PATH
 export PATH=$HOME/.pyenv/shims:$PATH
 export GOPATH=$HOME
 export PATH=$PATH:$GOPATH/bin
+export PATH=/usr/local/Cellar/mysql@5.6/5.6.38/bin:$PATH
 
 # Maven
 export M3_HOME=/usr/local/apache-maven-3.5.0
@@ -32,9 +33,9 @@ export DYLD_LIBRARY_PATH="/usr/local/mysql/lib"
 # RubyMineのvmoptionsの設定
 export RUBYMINE_VM_OPTIONS="~/Library/Preferences/RubyMine80/rubymine64.vmoptions"
 
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
-
+if [ ls -ld $HOME/.nvm >/dev/null 2>&1  ]; then
+  export NVM_DIR="$HOME/.nvm"
+  . "/usr/local/opt/nvm/nvm.sh"
+fi
 # PostgreSQL
 export PGDATA=/usr/local/var/postgres
-
