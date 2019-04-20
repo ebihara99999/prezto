@@ -29,6 +29,7 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export PATH=$M3:$JAVA_HOME:$PATH
 
 export DYLD_LIBRARY_PATH="/usr/local/mysql/lib"
+export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib
 
 # RubyMineのvmoptionsの設定
 export RUBYMINE_VM_OPTIONS="~/Library/Preferences/RubyMine80/rubymine64.vmoptions"
