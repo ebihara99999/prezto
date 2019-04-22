@@ -40,3 +40,6 @@ if [ ls -ld $HOME/.nvm >/dev/null 2>&1  ]; then
 fi
 # PostgreSQL
 export PGDATA=/usr/local/var/postgres
+
+# nodebrew
+export PATH=$HOME/.nodebrew/current/bin:$PATH
