@@ -60,6 +60,9 @@ alias vau='vagrant up'
 alias vas='vagrant status'
 alias vah='vagrant halt'
 
+## kubectlのエイリアス
+alias k='kubectl'
+
 # sudo の後のコマンドでエイリアスを有効にする
 alias sudo='sudo '
 
